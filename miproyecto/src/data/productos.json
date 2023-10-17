@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Chaleco Bebe",
+        "categoria": "individual",
+        "price": 6000,
+        "image": "https://i.ibb.co/3syWtPP/id1.webp"
+      },
+    {
+        "id": 2,
+        "title": "Saquito + Escarpines Bebe",
+        "categoria": "individual",
+        "price": 6500,
+        "image": "https://i.ibb.co/Pgb34HZ/id2.webp"
+    },
+    {
+        "id": 3,
+        "title": "Conjunto Crochet Naranja Bebe",
+        "categoria": "conjunto",
+        "price": 6000,
+        "image": "https://i.ibb.co/SmtYHXN/id3.webp"
+    },
+    {
+        "id": 4,
+        "title": "Chaleco Bebe",
+        "categoria": "individual",
+        "price": 7000,
+        "image": "https://i.ibb.co/5sHC8LL/id4.webp"
+    },
+    {
+        "id": 5,
+        "title": "Conjunto Crochet Rojo Bebe",
+        "categoria": "conjunto",
+        "price": 7000,
+        "image": "https://i.ibb.co/BN5ttrG/id5.webp"
+    },
+    {
+        "id": 6,
+        "title": "Gorros Bebe",
+        "categoria": "individual",
+        "price": 2000,
+        "image": "https://i.ibb.co/WgFJ9KM/id6.webp"
+    }
+]
