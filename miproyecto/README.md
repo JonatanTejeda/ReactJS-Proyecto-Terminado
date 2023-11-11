@@ -1,8 +1,12 @@
-# React + Vite
+# Mi Sueño Laneria - ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mi primer proyecto realizado con ReactJS, incorporando diversos conocimientos adquiridos durante estos meses.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Vite](https://vitejs.dev/): Herramienta de construcción rápida para proyectos web.
+- [Bootstrap Icons](https://icons.getbootstrap.com/): Iconos de Bootstrap para mejorar la interfaz.
+- [React Bootstrap](https://react-bootstrap.github.io/): Componentes Bootstrap para React.
+- [React Hook Form](https://react-hook-form.com/): Biblioteca para la gestión de formularios en React.
+- [Firebase](https://firebase.google.com/): Plataforma para la gestión de datos en tiempo real.
+

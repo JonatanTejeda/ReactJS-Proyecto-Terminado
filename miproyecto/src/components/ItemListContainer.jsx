@@ -1,31 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { pedirProductos } from './pedirProductos';
-import ItemList from './ItemList';
-import { useParams } from 'react-router-dom';
-
+import React, { useEffect, useState } from "react";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
   const [titulo, setTitulo] = useState("Productos");
-  const categoria = useParams().categoria;
+  const category = useParams().category;
 
   useEffect(() => {
-    pedirProductos().then((res) => {
-      if (categoria) {
-        setProductos(res.filter((prod) => prod.categoria === categoria));
-        setTitulo(categoria);
-      } else {
-        setProductos(res);
-        setTitulo("Productos");
-      }
-    });
-  }, [categoria]);
+    const productosRef = collection(db, "productos");
 
-  return (
-    <div>
-      <ItemList productos={productos} titulo={titulo} />
-    </div>
-  );
-}
+    const q = category
+      ? query(productosRef, where("category", "==", category))
+      : productosRef;
+
+    getDocs(q).then((resp) => {
+      setProductos(
+        resp.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        })
+      );
+
+      const newTitulo = category ? `Productos - ${category}` : "Productos";
+      setTitulo(newTitulo);
+    });
+  }, [category]);
+
+  return <ItemList productos={productos} titulo={titulo} />;
+};
 
 export default ItemListContainer;

@@ -1,13 +1,17 @@
-import React from 'react';
-import { Cart } from 'react-bootstrap-icons';
+import React, { useContext } from "react";
+import { Cart } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
+import { CartContext } from "../Provider/CartProvider";
 
 const CartWidget = () => {
-  const itemCount = 3;
+  const { cantidadEnCarrito } = useContext(CartContext);
 
   return (
     <div className="cart-widget">
-      <Cart/>
-      <span className="notification">{itemCount}</span>
+      <Link to="/Carrito">
+        <Cart />
+        <span className="notification">{cantidadEnCarrito()}</span>
+      </Link>
     </div>
   );
 };
