@@ -10,4 +10,4 @@ Mi primer proyecto realizado con ReactJS, incorporando diversos conocimientos ad
 - [React Hook Form](https://react-hook-form.com/): Biblioteca para la gestión de formularios en React.
 - [Firebase](https://firebase.google.com/): Plataforma para la gestión de datos en tiempo real.
 
-https://github.com/JonatanTejeda/ReactJS-CH-SegundaPreentrega/assets/102326209/c3379a31-bee1-43c1-a3cf-d4b495f62f9e
+https://github.com/JonatanTejeda/ReactJS-CH-SegundaPreentrega/assets/102326209/7ce6724b-f3c5-4c6f-8682-a2673b4883d3
